@@ -1,0 +1,8 @@
+body {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_foodlogo.png");
+  background-repeat: repeat;
+}
+
+h1{
+	color: #0000FF;
+}

@@ -1,0 +1,59 @@
+doctype html
+html
+	head
+		title= 'Leave a Message'
+		link(href='http://localhost:3000/msg.css', rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet')
+
+	body
+		.top
+			a.left(href='/') Home
+	
+			if (username && authenticated)
+				a.right(href='/signout') Sign Out
+				a.right(href='/add_article') Add Article
+				a.right(href='/profile') Profile
+				span #{username}
+			else
+				a.right(href='/register') Register
+				a.right(href='/signin') Log In
+
+		.expand
+			.bottom
+				for article in blogs
+					div
+						div(style='float:left;margin-top:10px;')= article.Username
+						div(style='float:right;margin-top:10px;')= article.CreateDate
+						br
+						div(style='clear:both')= article.Article
+						hr(style='margin-top:30px;')
+						br
+						br
+
+				div
+					for comment in comments
+						div
+							div(style='float:left;margin-top:10px;')= comment.Visitor
+							div(style='float:right;margin-top:10px;')= comment.CreateDate
+							br
+							div(style='clear:both')= comment.Comment
+							hr(style='margin-top:30px;')
+							br
+							br
+			
+				.box1
+					form(name="comment", action="/apis/comment/" + messageID, method="post")
+						.title
+							h1 Leave a Message
+						div
+							p
+								span(style='padding-left:150px') Name: 
+								input(type="text", name="Visitor")
+							p
+								textarea(cols="70", rows="15", style='resize : none;margin-left:203px', name="Comment")
+							div
+								span(style='padding-right:655px')
+								input.btn(type="submit", name="submit", value="Reply ")
+								br
+								br

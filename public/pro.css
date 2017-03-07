@@ -1,0 +1,120 @@
+
+
+body{
+	background:url('http://more-sky.com/data/out/6/IMG_134751.png') no-repeat center center;
+	background-size: cover;
+	
+}
+
+* {
+	
+}
+
+/****************for top bar***************/
+.top{
+	margin:0px;
+	height: 25px;
+	padding-left: 10px;
+	background-color: #eaaf5d;
+	border: 1px solid #eaaf5d;
+	color:black;
+	font-family: 'Righteous', cursive;
+}
+
+.right{
+	margin-right:20px;
+	float:right;
+}
+
+.left{
+	margin-right:20px;
+	float:left;
+}
+
+.left:hover, .right:hover{
+	color: white;
+}
+/*********************************************/
+
+/****************for title***************/
+.title{
+	color:hsla(136, 84%, 53%, 0.77);
+	-webkit-text-fill-color: hsla(35, 77%, 56%, 0.72);
+	-webkit-text-stroke: 1px hsla(35, 77%, 20%, 0.72);
+	padding:0px;
+	padding-bottom: 0px;
+	padding-top: 230px;
+	text-align:center;
+	font-family:  'Pacifico', cursive;
+	font-size:45px;
+	background-size: contain;
+	min-width: 350px;
+	background:url('http://vignette2.wikia.nocookie.net/pokemon/images/9/93/050Diglett_Dream.png/revision/latest?cb=20141125181524') no-repeat center top;
+	font-weight: bold;
+	margin:0px auto;
+	width: 700px;
+}
+
+.title h1{
+	margin:0px;
+}
+/****************************************/
+
+.expand{
+	height: 900px;
+}
+
+/****************for bottom***************/
+.bottom{
+	font-family: 'Comfortaa', cursive;
+	margin:0px auto;
+	margin-top: 20px;
+	padding:20px 30px 35px 30px;
+	width: 700px;
+	height: 200px;
+	min-width: 700px;
+	color: black;
+	background-color: hsla(35, 77%, 56%, 0.41);
+	border: 1px solid hsla(35, 77%, 56%, 0.41);
+  	border-radius: 15px;
+
+}
+
+.user{
+	float:left;
+	margin-top:10px;
+	font-weight:  bold;
+}
+
+.date{
+	float:right;
+	margin-top:10px;
+	font-weight:  bold;
+}
+
+
+.article{
+	clear:both;
+	overflow: hidden;
+	height: 55px;
+	
+}
+
+.delete{
+	float:right;
+	margin-top:45px;
+	margin-right:15px;
+	font-weight:  bold;
+}
+
+.delete:hover , .modify:hover{
+	color:black;
+}
+
+.modify{
+	float:right;
+	margin-top:45px;
+	margin-right:20px;
+	font-weight:  bold;
+}
+/****************************************/

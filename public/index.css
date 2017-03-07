@@ -1,0 +1,122 @@
+
+
+body{
+	background:url('http://more-sky.com/data/out/6/IMG_134751.png') no-repeat center center;
+	background-size: cover;
+	
+}
+
+* {
+	
+}
+
+/****************for top bar***************/
+.top{
+	margin:0px;
+	height: 25px;
+	padding-left: 10px;
+	background-color: hsla(138, 84%, 75%, 1);
+	border: 1px solid hsla(138, 84%, 75%, 1);
+	color:black;
+	font-family: 'Righteous', cursive;
+}
+
+.right{
+	margin-right:20px;
+	float:right;
+}
+
+.left{
+	margin-right:20px;
+	float:left;
+}
+
+.left:hover, .right:hover{
+	color: red;
+}
+/*********************************************/
+
+/****************for title***************/
+.title{
+	color:hsla(136, 84%, 53%, 0.77);
+	-webkit-text-fill-color: hsla(136, 84%, 53%, 0.77);
+	-webkit-text-stroke: 1px hsla(136, 84%, 37%, 0.77);
+	padding:0px;
+	text-align:center;
+	font-family:  'Pacifico', cursive;
+	font-size:45px;
+	background-size: contain;
+	min-width: 350px;
+	background:url('picture2.png') no-repeat center top;
+	font-weight: bold;
+	margin:0px auto;
+	width: 700px;
+	height:400px;
+}
+/****************************************/
+
+.expand{
+	height: 900px;
+}
+
+/****************for bottom***************/
+.bottom{
+	font-family: 'Comfortaa', cursive;
+	margin:0px auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding:20px 30px 35px 30px;
+	width: 700px;
+	height: 200px;
+	min-width: 700px;
+	color: black;
+	background-color: hsla(130, 84%, 78%, 0.63);
+	border: 1px solid hsla(130, 84%, 78%, 0.63);
+  	border-radius: 15px;
+
+}
+
+.user{
+	float:left;
+	margin-top:10px;
+	font-weight:  bold;
+}
+
+.date{
+	float:right;
+	margin-top:10px;
+	font-weight:  bold;
+}
+
+
+.article{
+	clear:both;
+	overflow: hidden;
+	height: 55px;
+}
+
+.msg{
+	font-family: 'Comfortaa', cursive;
+	font-family: 'Russo One', sans-serif;
+	color: black;
+	text-align: center;
+	padding:70px 0px 0px 0px;
+	float:right;
+	margin-top:30px;
+	margin-right:20px;
+	background:url('http://thecraftchop.com/files/others/Pokeball.svg') no-repeat center;
+	background-size: contain;
+    height:10px;
+    text-transform: uppercase;
+}
+
+.msg:active {
+	background:url('http://orig13.deviantart.net/3979/f/2015/056/6/3/pokelia__pokeball_meme_by_pikokko-d8jinub.png') no-repeat center;
+	background-size: contain;
+}
+
+.msg:hover{
+	color: hsla(291, 84%, 42%, 1);
+	font-weight: bold;
+}
+/****************************************/

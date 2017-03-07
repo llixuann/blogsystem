@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+	head
+		title= 'Blog System'
+		link(href='index.css', rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Comfortaa|Russo+One' rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet')
+
+	body
+		.container
+			.row
+					.top
+				
+								a.left(href='/') Home
+				
+								if (username && authenticated)
+									a.right(href='/signout') Sign Out
+									a.right(href='/add_article') Add Article
+									a.right(href='/profile') Profile
+									span #{username}
+								else
+									a.right(href='/signin') Log In
+									a.right(href='/register') Register
+									a.right(href='/forget') Forgot password
+					.title
+							br
+							br
+							h1= title
+
+					.expand
+						for article in blogs
+							.bottom
+								.user= article.Username
+								.date= article.CreateDate
+								br
+								br
+								br
+								.article= article.Article
+								a.msg(href='/message/'+article.id) Leave a message
+							

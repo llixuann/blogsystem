@@ -1,0 +1,34 @@
+doctype html
+html
+	head
+		title= 'Register'
+		link(href='register.css', rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet')
+
+	body
+		.top
+			a.left(href='/') Home
+	
+			a.right(href='/signin') Login
+			a.right(href='/forget') Forgot password	
+
+		.title
+			h1 Register
+		
+		.expand
+			.bottom
+				form(name="login", action="/apis/login", method="post")
+					
+						p
+							label.user Username or e-mail
+							input(type="text", name="user", placeholder='username@example.com')
+						p
+							label.pw  Password
+							input(type="password", name="passwd")
+						p
+						span(style='padding-right:250px')
+						input.btn(type="submit", name="submit", value="Sign Up")
+						
+						
+						

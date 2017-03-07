@@ -1,0 +1,32 @@
+doctype html
+html
+	head
+		title= 'Login'
+		link(href='signin.css', rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet')
+
+	body
+		.top
+			a.left(href='/') Home
+	
+			a.right(href='/register') Register
+			a.right(href='/forget') Forgot password	
+
+		.title
+			h1 Login
+		
+		.expand
+			.bottom
+				form(name="login", action="/apis/login", method="post")
+					.form
+						p
+							label.user Username or e-mail
+							input(type="text", name="user", placeholder='username@example.com')
+						p
+							label.pw  Password
+							input(type="password", name="passwd")
+					p
+						span 
+							a.forgot(href='/forget') Forgot password
+						input.btn(type="submit", name="submit", value="login")

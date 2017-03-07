@@ -1,0 +1,108 @@
+body{
+	background:url('http://more-sky.com/data/out/6/IMG_134751.png') no-repeat center center;
+	background-size: cover;
+	
+}
+
+* {
+ 	
+}
+
+/****************for top bar***************/
+.top{
+	margin:0px;
+	height: 25px;
+	padding-left: 10px;
+	background-color: #fff538;
+	border: 1px solid #fff538;
+	color:black;
+	font-family: 'Righteous', cursive;
+}
+
+.right{
+	margin-right:20px;
+	float:right;
+}
+
+.left{
+	margin-right:20px;
+	float:left;
+}
+
+.left:hover, .right:hover{
+	color: red;
+}
+/*********************************************/
+
+/****************for title***************/
+.title{
+	color:hsla(40, 100%, 52%, 0.8);
+	-webkit-text-fill-color: hsla(40, 100%, 52%, 0.8);
+	-webkit-text-stroke: 1px hsla(40, 100%, 39%, 0.8);
+	padding:15px;
+	text-align:left;
+	font-family:  'Pacifico', cursive;
+	font-size:45px;
+	background-size: contain;
+	min-width: 350px;
+	background:url('http://vignette3.wikia.nocookie.net/pokemontowerdefensetwo/images/e/e1/Pikachu_vector_by_paperjoey-d3919s8.png/revision/latest?cb=20141215025654') no-repeat right center;
+	font-weight: bold;
+	margin:0px auto;
+	width: 400px;
+}
+/****************************************/
+
+.expand{
+	height: 900px;
+}
+
+/****************for bottom***************/
+.bottom{
+	font-family: 'Righteous', cursive;
+	margin:0px auto;
+	margin-top: 20px;
+	padding:20px 30px 35px 30px;
+	width: 350px;
+	height: 150px;
+	min-width: 350px;
+	color: black;
+	background-color: hsla(57, 93%, 58%, 0.44);
+	border: 1px solid hsla(57, 93%, 58%, 0.44);
+  	border-radius: 15px;
+
+}
+
+.user{
+	padding-right:30px;
+}
+
+.pw{
+	padding-right:100px;
+}
+
+.forgot{
+	padding-right:135px;
+}
+
+.forgot:hover{
+	color: red;
+}
+
+.btn {
+  background: #ffad0a;
+  border: 1px solid #ffad0a;
+  border-radius: 3px;
+  color: #FFF;
+  display: inline-block;
+  margin: 0px auto;
+  padding: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #FFF;
+  border: 1px solid #ffad0a;
+  color: #ffad0a;
+  animation: ease;
+}

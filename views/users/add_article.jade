@@ -1,0 +1,41 @@
+doctype html
+html
+	head
+		title= 'Add Article'
+		link(href='add.css', rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Comfortaa|Russo+One' rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Pangolin' rel='stylesheet')
+
+	body
+		.top
+			a.left(href='/') Home
+	
+		
+			if (username && authenticated)
+				a.right(href='/signout') Sign Out
+				a.right(href='/profile') Profile
+				span #{username}
+			else
+				a.right(href='/register') Register
+				a.right(href='/signin') Log In
+
+		.title
+			h1 Add Article
+				
+		.expand
+			.bottom
+				form(name="add", action="/apis/add", method="post")
+					.form
+							br
+							span(style='font-weight: bold') Writer: 
+							label(style='padding-right:50px;font-weight: bold') #{username}
+							br
+							br
+							textarea(cols="50", rows="25", style='resize : none;', name="Content")
+							br
+							input.btn(type="submit", name="submit", value="Save")
+						
+						
+						
